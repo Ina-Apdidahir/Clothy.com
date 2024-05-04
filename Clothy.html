@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;500;700;800;900&family=Anta&family=Poppins:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"rel="stylesheet"/>
+
+    <!-- 
+        font-family: "Alegreya Sans SC", sans-serif;
+        font-family: "Poppins", sans-serif;
+        font-family: "Anta", sans-serif;
+     -->
+
+     <link rel="stylesheet" href="Styles/H&F.css">
+     <link rel="stylesheet" href="Styles/Mediaquary.css">
+    <link rel="stylesheet" href="Styles/Clothy.css">
+    <title>E-Commerce Website</title>
+</head>
+<body>
+   
+   <div class="container">
+        <div class="section">
+            <div class="head_cont">
+                <header>
+                    <div class="logo-side">
+                        <img class="hidden" src="Ecomerce img/ICONS/Logo-removebg-preview.png" alt="">
+                        <h2 class="hidden">Clothy.</h2>
+                    </div>
+                    <div class="nav-menue">
+                        <ul>
+                            <li><a class="hidden" href="">Home</a></li>
+                            <li><a class="hidden" href="">About</a></li>
+                            <li><a  class="hidden" href="shop.html">Categories</a></li>
+                            <li><a class="hidden" href="">Trending</a></li>
+                            <li><a class="hidden" href="">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="icons">
+                        <div class="user_actions">
+                            <div class="searchBtn hidden">
+                                <img src="Ecomerce img/ICONS/search-interface-symbol.png" alt="" id="search_btn">
+                            </div>
+                            <a href="carts.html" class="userAction hidden">
+                                <img src="Ecomerce img/ICONS/shopping-bag.png" alt="">
+                                <span class="cartCount">0</span>
+                            </a>
+                            <a href="Favorites.html" class="userAction hidden">
+                                <img src="Ecomerce img/ICONS/favourite.png" alt="">
+                                <span class="FavoriteCount">0</span>
+                            </a>
+                            <div class="userBtn hidden">
+                                <img src="Ecomerce img/ICONS/user.png" alt="" id="user">
+                            </div>
+                            <div class="menueBtn hidden">
+                                <img src="Ecomerce img/ICONS/menu.png" alt="" id="menue">
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="Nav-side" id="Nav-side">
+                        <div class="close hidden">
+                            <img src="Ecomerce img/ICONS/close.png" alt="" id="close">
+                        </div>
+                        <div class="Nav_classes">
+                            <div class="Nav-side-menue">
+                                <ul>
+                                    <li class="hidden"><a href="">Home</a></li>
+                                    <li class="hidden"><a href="">About</a></li>
+                                    <li class="hidden"><a href="shop.html">Categories</a></li>
+                                    <li class="hidden"><a href="">Trending</a></li>
+                                    <li class="hidden"><a href="">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="Nav-side-icons">
+                                <div class="user_actions">
+                                    <a href="carts.html" class="userAction hidden">
+                                        <img src="Ecomerce img/ICONS/shopping-bag.png" alt="">
+                                        <span class="cartCount">0</span>
+                                        <small>Carts</small>
+                                    </a>
+                                    <a href="Favorites.html" class="userAction hidden">
+                                        <img src="Ecomerce img/ICONS/favourite.png" alt="">
+                                        <span class="FavoriteCount">0</span>
+                                        <small>Favorites</small>
+                                    </a>
+                                    <div class="userAction hidden" id="user">
+                                        <div class="userAction hidden">
+                                            <img src="Ecomerce img/ICONS/user.png" alt="">
+                                            <small>Login</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+
+            <div class="search_cont" id="search">
+                <form action="" class="search__form">
+                   <i class="ri-search-line search__icon"></i>
+                   <input type="search" placeholder="What are you looking for?" class="search__input">
+                </form>
+       
+                <img class="search__close" src="Ecomerce img/ICONS/close.png" alt="" id="search-close">
+            </div>
+
+            <div class="login" id="login">
+                <form action="" class="login__form">
+                   <h2 class="login__title">Log In</h2>
+                   
+                   <div class="login__group">
+                      <div>
+                         <label for="email" class="login__label">Email</label>
+                         <input type="email" placeholder="Write your email" id="email" class="login__input">
+                      </div>
+                      
+                      <div>
+                         <label for="password" class="login__label">Password</label>
+                         <input type="password" placeholder="Enter your password" id="password" class="login__input">
+                      </div>
+                   </div>
+       
+                   <div>
+                      <p class="login__signup">
+                         You do not have an account? <a href="#">Sign up</a>
+                      </p>
+          
+                      <a href="#" class="login__forgot">
+                         You forgot your password
+                      </a>
+          
+                      <button type="submit" class="login__button">Log In</button>
+                   </div>
+                </form>
+       
+                <img class="login__close" src="Ecomerce img/ICONS/close.png" alt="" id="login-close">
+            </div>
+
+            <div class="main">
+                <div class="left">
+                    <p  class="hidden">Men Fashion</p>
+                    <h1 class="hidden">Silk. Modren. <br> Awsome.</h1>
+                    <small class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cupiditate minus quo aliquid ipsa ea molestiae ut deserunt temporibus, iusto reiciendis vero dolor porro numquam, ipsam modi tempora, perferendis doloribus.</small> <br>
+                    <button class="hidden">Shop Collection</button>
+                </div>
+                <div class="right">
+                    <div class="fancy-shape hidde">
+                        <img class="hidde"src="Ecomerce img/ICONS/hockerty_man_wearing_top_coat-removebg-preview.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="brans">
+                <img src="Ecomerce img/ICONS/PUMA_Logo.jpg" alt="">
+                <img src="Ecomerce img/ICONS/Lacost.svg" alt="">
+                <img src="Ecomerce img/ICONS/adidas-logo.webp" alt="">
+                <img src="Ecomerce img/ICONS/Nike Logo.jpg" alt="">
+                <img src="Ecomerce img/ICONS/Levis logo.jpg" alt="">
+                <img src="Ecomerce img/ICONS/Zara_Logo.png" alt="">
+            </div>
+
+            <div class="head-Line">
+                <p>Summer Collection</p>
+                <h2>Popular Products</h2>
+            </div>
+
+            <div class="product-container">
+                <i class="ri-arrow-left-s-line slideBTN" id="left-Arow"></i>
+
+                <div class="products"></div> 
+
+                <i class="ri-arrow-right-s-line slideBTN" id="right-Arow"></i>
+                <div class="scrollbar">
+                    <div class="scrollbar-tracker">
+                        <div class="scrollbar-thum"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="head-Line">
+                <p>Weekly Discount</p>
+                <h2>Hot Sales</h2>
+            </div>
+
+            <div class="advertising">
+                <div class="Advertiser">
+                    <div class="Txt_side">
+                        <div class="subtitle">
+                            <h2>Deal Of the Day</h2>
+                            <small>Limited quantities</small>
+                        </div>
+                        <div class="subtitle">
+                            <p>Summer Collection new</p>
+                            <p>Modren Desing</p>
+                        </div>
+                        <div class="Price">
+                            <p>$13.99</p> <small>$19.99</small>
+                        </div>
+                        <div class="Date">
+                           <p>Harry Up! Offer Ends in</p>
+                           <div class="offer-time">
+                            <div class="timer">
+                                <span><p>10</p>: <p>09</p> : <p class="seconds">22</p></span>
+                            </div> 
+                            <div class="timer">
+                                <div> <small>Days</small>  <small>Hours</small>  <small>Minutes</small> </div>
+                            </div> 
+                       </div>
+                        </div>
+                        <div class="btn">
+                            <button>Shop Now</button>
+                        </div>
+                    </div>
+                    <div class="img_side">
+                        <img class="Adver_img1" src="Ecomerce img/Shirts & Sweters/Adverstising Img1.png" alt="">
+                        <img class="Adver_img1" src="Ecomerce img/Shirts & Sweters/winter sweater strong.png" alt="">
+                        <img class="Adver_img1" src="Ecomerce img/shorts & Shoes/Black winter Shoes.png" alt="">
+                        <img class="Adver_img1" src="Ecomerce img/Shirts & Sweters/Summer Shirt 4.png" alt="">
+                        <img class="Adver_img1" src="Ecomerce img/Shirts & Sweters/Adult Sweater Pink.png" alt="">
+                        <img class="Adver_img1" src="Ecomerce img/Shirts & Sweters/Blue Cotton shirt.png" alt="">
+                        <img class="Adver_img1" src="Ecomerce img/shorts & Shoes/BT205 sneakers green.png" alt="">
+                    </div>
+                </div>
+                <div class="Advertiser">
+                    <div class="Txt_side">
+                        <div class="subtitle">
+                            <h2>Deal Of the Day</h2>
+                            <small>Limited quantities</small>
+                        </div>
+                        <div class="subtitle">
+                            <p>Summer Collection new</p>
+                            <p>Modren Desing</p>
+                        </div>
+                        <div class="Price">
+                            <p>$17.99</p> <small>$22.99</small>
+                        </div>
+                        <div class="Date">
+                           <p>Harry Up! Offer Ends in</p>
+                           <div class="offer-time">
+                                <div class="timer">
+                                    <span><p>10</p>: <p>09</p> : <p>22</p></span>
+                                </div> 
+                                <div class="timer">
+                                    <div> <small>Days</small>  <small>Hours</small>  <small>Minutes</small> </div>
+                                </div> 
+                           </div>
+                        </div>
+                        <div class="btn">
+                            <button>Shop Now</button>
+                        </div>
+                    </div>
+                    <div class="img_side">
+                        <img class="Adver_img2" src="Ecomerce img/Shirts & Sweters/Advertising Image2.png" alt="">
+                        <img class="Adver_img2" src="Ecomerce img/shorts & Shoes/Leather sports Shoe  white.png" alt="">
+                        <img class="Adver_img2" src="Ecomerce img/shorts & Shoes/white gym Under wear.png" alt="">
+                        <img class="Adver_img2" src="Ecomerce img/Shirts & Sweters/Beach Shirt white.png" alt="">
+                        <img class="Adver_img2" src="Ecomerce img/shorts & Shoes/Jeans Shoes.png" alt="">
+                        <img class="Adver_img2" src="Ecomerce img/Shirts & Sweters/Summer Shirt 5.png" alt="">
+                        <img class="Adver_img2" src="Ecomerce img/shorts & Shoes/Boxed Shoes 1.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrival-head">
+                <p>New <span>Arrivals</span></p> 
+               <div class="arrows">
+                <i class="bx bx-chevron-left moveBTN" id="left-Arow"></i>
+                <i class="bx bx-chevron-right moveBTN" id="right-Arow"></i>
+               </div>
+            </div>
+
+            <div class="product-container">
+                <div class="New_arrivals"></div> 
+            </div>
+
+            <div class="crazydeals">
+                <div class="deal">
+                    <img src="Ecomerce img/ICONS/luxery.jpg" alt="">
+                    <div class="txts">
+                        <p>Crazy Deals</p>
+                        <h1>Buy 1 get 1 Free </h1>
+                        <small>The Best Classic dress is on sale at Clothy</small>
+                        <div class="btn">
+                            <button>Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="deal">
+                    <img src="Ecomerce img/ICONS/whole sale suits.jpg" alt="">
+                    <div class="txts">
+                        <p>Spring/Summer</p>
+                        <h1>Upcoming Seasons</h1>
+                        <small>The Best Classic dress is on sale at Clothy</small>
+                        <div class="btn">
+                            <button>Collection</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="collections">
+                <div class="collection">
+                    <img src="Ecomerce img/ICONS/lucery Suit.jpg" alt="">
+                    <div class="txts">
+                        <p>Seasonal Sale</p>
+                        <h1>luxery Collection</h1>
+                        <div class="btn">
+                            <button>Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="collection">
+                    <img src="Ecomerce img/ICONS/Jeans.jpg" alt="">
+                    <div class="txts">
+                        <p>Seasonal Sale</p>
+                        <h1>luxery Jeans</h1>
+                        <div class="btn">
+                            <button>Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="collection">
+                    <img src="Ecomerce img/ICONS/Men shoes.jpg" alt="">
+                    <div class="txts">
+                        <p>Seasonal Sale</p>
+                        <h1>luxery Shoes</h1>
+                        <div class="btn">
+                            <button>Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerContainer">
+            <div class="subscriptions">
+                <div class="email">
+                    <i class="ri-mail-add-line"></i>
+                    <h3>Sing up to NewsLetter</h3>
+                </div>
+                <p>And recieve $25 coupon for the Firs shopping</p>
+                <div class="subs_input">
+                    <input type="text">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+            
+            <div class="midleFooter">
+                <div class="logoPart">
+                    <div class="logo">
+                        <img src="Ecomerce img/ICONS/Logo-removebg-preview.png" alt="">
+                        <h1>Clothy</h1>
+                    </div>
+                    <div class="socialMedia">
+                        <i class="ri-whatsapp-line"></i>
+                        <i class="ri-facebook-line"></i>
+                        <i class="ri-instagram-line"></i>
+                        <i class="ri-twitter-x-line"></i>
+                        <i class="ri-tiktok-fill"></i>
+                    </div>
+                </div>
+                <div class="main_foter">
+                    <div class="part">
+                        <h2>Home</h2>
+                        <ol>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Shop</a></li>
+                            <li><a href="">Arrivals</a></li>
+                            <li><a href="">Hot Sales</a></li>
+                            <li><a href="">Tranding</a></li>
+                        </ol>
+                    </div>
+                    <div class="part">
+                        <h2>Information</h2>
+                        <ol>
+                            <li><a href="">Delivery Information</a></li>
+                            <li><a href="">Privacy & Policy</a></li>
+                            <li><a href="">Terms Of use</a></li>
+                            <li><a href="">Help & Advices</a></li>
+                            <li><a href="">Refund Policy</a></li>
+                        </ol>
+                    </div>
+                    <div class="part">
+                        <h2>Contact us</h2>
+                        <ol>
+                            <li><a href="">Our latest Fashion style <br> Designs from aroun the World</a></li>
+                            <li><i class="ri-mail-line"></i><a href="">clothy100@gmail.com</a></li>
+                            <li><i class="ri-phone-line"></i><a href="">+252-123-456-789</a></li>
+                            <li><i class="ri-map-pin-2-line"></i><a href="">Garowe, Nugal Somalia</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <i class="ri-copyright-line"></i>
+                <p>Copyright 2024 Pazhka, All Rights Reserved</p>
+            </div>
+        </div>
+   </div>
+
+  
+   <script type="module" src="scripts/HtmlScripts/Clothy.js"></script>
+    <script type="module" src="scripts/HtmlScripts/Arrivals.js"></script>
+   <script type="module" src="scripts/sliders.js"></script>
+</body>
+</html>
+
+
+
+

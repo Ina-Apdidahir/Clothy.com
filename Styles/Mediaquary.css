@@ -1,0 +1,276 @@
+
+@media screen and (min-width: 576px){
+  .container .midleFooter{
+    width: 100%;
+    display: flex;
+  }
+  .container  .logoPart{
+    padding: 10px 0;
+  }
+  .container .logoPart {
+    width: 35%;
+  }
+  .container .logoPart .logo img{
+    width: 80px;
+  }
+  .container .socialMedia{
+    gap: 8px;
+    padding: 6px;
+  }
+  .container .socialMedia i{
+    cursor: pointer;
+    padding: 6px;
+  }
+
+  .container .main_foter .part ol li{
+    padding: 2px 6px;
+  }
+  .container .main_foter .part ol li i{
+    font-size: 18px;
+    padding: 1px 5px;
+  }
+  .container .main_foter .part ol li a{
+    font-size: 10px;
+  }
+  .container .main_foter .part h2{
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+  .container .head_cont {
+    height: 50px;
+  }
+  .container header {
+    padding: 5px;
+  }
+
+  .container .logo-side img {
+    width: 45px;
+}
+.container .logo-side h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+.container #search_btn,
+.container #menue{
+    width: 20px;
+}
+  .menueBtn{
+    display: none;
+  }
+  .head_cont .nav-menue{
+      display: initial;
+  }
+  header .icons .user_actions{
+      gap: 1.25rem;
+  }
+  .icons .user_actions .userAction{
+      display: inline;
+  }
+  .icons .userBtn{
+      display: initial;
+  }
+  .container .main .left {
+    width: 45%;
+    margin-left: 15px;
+  }
+  .container .left button{
+    margin-top: 20px;
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+.container .left p,
+.container .left small {
+  font-size: 14px;
+  font-weight: 500;
+}
+.container .left h1 {
+    font-size: 55px;
+    font-weight: 700;
+}
+.container .main .right {
+  width: 50%;
+}
+.container .fancy-shape{
+  width: 450px;
+  height: 450px;
+  left: 100px;
+}
+  
+  .container .brans {
+    width: 100%;
+    gap: 40px;
+  }
+  .container .brans img {
+    width: 100px;
+  }
+  .container .head-Line p {
+    font-size: 14px;
+  } 
+
+.container .head-Line h2 {
+    font-size: 34px;
+  }
+  .container .slideBTN{
+    visibility: visible;
+    font-size: 18px;
+    padding: 10px;
+  }
+  .container .product-container .products,
+  .container .product-container .New_arrivals{
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .container .New_arrivals .product-profile,
+  .container .product-profile {
+      width: 220px;
+      height: 320px;
+      padding: 0 5px 10px 5px;
+  }
+ .product-profile .produt-img {
+  height: 70%;
+ }
+ .product-container .status_container{
+  width: 45px;
+  height: 25px;
+  padding-right: 5px;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+ }
+ .product-container .favorite i{
+  font-size: 18px;
+ }
+ .product-profile .product-Name {
+  padding: 0;
+  gap: 0 5px;
+}
+.product-profile .product-Name p {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.product-profile .product-Name small,
+.product-profile .product-Rating i {
+  font-size: 14px;
+  font-weight: 500;
+}
+.product-profile .product-Rating{
+  padding: 5px 0;
+}
+
+.product-profile .Rating__stars{
+   gap: -5px;
+   padding-right: 10px;
+}
+.product-profile .product-btns {
+  gap: 5px 12px;
+}
+.product-profile .product-btns button {
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 10px;
+}
+.container .Advertiser{
+  padding: 10px;
+  width: 450px;
+}
+.container .subtitle h2{
+  font-size: 24px;
+}
+.container .timer span{
+  gap: 12px;
+}
+.container .timer{
+  padding: 6px 8px;
+}
+.container .timer small,
+.container .Date p,
+.container .Price small,
+.container .subtitle small{
+  font-size: 12px;
+}
+.container .subtitle p{
+  font-size: 14px;
+}
+.container .Price p{
+  font-size: 16px;
+}
+.container .btn button{
+  padding: 8px 16px;
+  font-size: 12px;
+}
+.container .Advertiser img{
+  width: 280px;
+}
+
+
+.container .subscriptions{
+  padding: 20px;
+}
+.container .subscriptions .email i{
+  font-size: 25px;
+}
+.container .email h3,
+.container .subscriptions p{
+    font-size: 14px;
+}
+.container .subs_input input{
+  padding: 8px;
+  width: 340px;
+}
+.container .subs_input button{
+  padding: 8px 16px;
+  font-size: 12px;
+}
+
+.container .footerContainer .midleFooter{
+  width: 100%;
+  display: flex;
+}
+.container .footerContainer .logoPart{
+  padding: 10px 0;
+}
+.container .footerContainer .logoPart {
+  width: 40%;
+}
+.container .logoPart .logo img{
+  width: 180px;
+}
+.container .main_foter .part ol li{
+  padding: 6px 10px;
+}
+.container .main_foter .part ol li i{
+  font-size: 20px;
+  padding: 5px;
+}
+.container .main_foter .part ol li a{
+  font-size: 14px;
+}
+.container .main_foter .part h2{
+  font-size: 25px;
+}
+
+.container .footerContainer .bottom{
+  width: 100%;
+  padding: 10px;
+  border-top: 1px solid #09040c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .footerContainer .bottom i{
+  font-size: 14px;
+}
+.container .footerContainer .bottom p{
+  font-size: 12px;
+}
+}
+

@@ -1,0 +1,317 @@
+
+ 
+.categories{
+    margin-top: 35px;
+    margin-left: 5%; 
+    width: 100%;
+    padding: 5px;
+}
+
+.categories a{
+    text-decoration: none;
+    color: #09040c;
+}
+
+.categories button{
+    padding: 8px 14px;
+    border: none;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.782);
+    font-size: 10px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.dark{
+    background: #09040c;
+    color: #FDFDFD;
+}
+.product-container{
+    width: 100%;
+}
+.products{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.products-container{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.product-wraper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.status_container,
+.star-cont {
+    width: 35px;
+    height: 20px;
+    border-radius: 5px;
+    background: #f46678;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FDFDFD;
+    padding-right: 5px;
+}
+
+.status_container h3,
+.star-cont h3 {
+    font-size: 10px;
+}
+
+
+.star-rate {
+    gap: 5px;
+    padding: 0 5px;
+    border-right: 1px solid #FDFDFD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.star-rate span {
+    font-size: 8px;
+}
+
+.star-rate i {
+    font-size: 10px;
+}
+
+.favorite {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.favorite i {
+    color: transparent;
+    -webkit-text-stroke: 1px #121009;
+    font-size: 14px;
+}
+.favorite:hover i {
+    color: #09040c;
+}
+
+
+.produt-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 70%;
+}
+.produt-img .Main_img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.New_arrivals .product-profile,
+.product-profile {
+    width: 165px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.782);
+    padding: 0 5px 4px 5px;
+}
+
+
+
+.product-Name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+.product-Name h2{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.product-profile p {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.product-profile .product-Name small {
+    font-family: "Anta", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+.product-Rating{
+    display: flex;
+    align-items: center;
+  }
+  .Rating__stars{
+     gap: -5px;
+     padding-right: 10px;
+  }
+  .product-Rating span {
+      font-size: 10px;
+      text-align: center;
+  }
+  
+  .product-Rating i {
+      font-size: 14px;
+  }
+.product-btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px 0;
+}
+
+.product-btns button {
+    cursor: pointer;
+    padding: 6px 8px;
+    border-radius: 2px;
+    font-size: 8px;
+    color: #FDFDFD;
+    background: #1b0526;
+    border: none;
+}
+.product-btns .DetailBtn{
+    background: #d8d8d8;
+    color: #09040c;
+}
+.product-btns button a{
+    font-family: "Anta", sans-serif;
+    color: #09040c;
+    text-decoration: none;
+}
+.product-btns button:hover a{
+    text-decoration: underline;
+}
+
+.New_arrivals {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.New_arrivals .star-cont{
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ebc632;
+}
+
+
+.searched_cont,
+.Favorites_Container{
+    margin-top: 35px;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+.searched_product,
+.Favorites{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap: 8px 5px;
+}
+
+
+
+
+/* /////////\\\\\\\\\\\\\\\\\\\ Brack Points \\\\\\\\\\\\\\\\\\//////////////  */
+
+@media screen and (min-width: 1024px) {
+
+.container .categories{
+    margin-top: 55px;
+    margin-left: 15%; 
+    padding: 10px;
+}
+.container .categories button {
+    padding: 8px 18px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.container .products{
+  gap: 10px;
+  padding: 10px;
+}
+.container .product-profile {
+    width: 200px;
+    height: 320px;
+}
+.product-profile .produt-img {
+height: 70%;
+}
+.product-container .status_container,
+.product-container .star-cont{
+    width: 45px;
+    height: 25px;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    padding-right: 5px;
+}
+.container .product-container .favorite i{
+font-size: 14px;
+}
+
+.container .product-profile .product-Name p {
+font-size: 12px;
+font-weight: 500;
+}
+.container .product-profile span{
+    font-size: 10px;
+}
+.product-profile .product-Name small,
+.product-profile .product-Rating i {
+font-size: 14px;
+font-weight: 500;
+}
+.product-profile .product-Rating{
+padding: 5px 0;
+}
+
+.product-profile .Rating__stars{
+ gap: -5px;
+ padding-right: 10px;
+}
+.product-profile .product-btns {
+gap: 5px 12px;
+}
+.product-profile .product-btns button {
+padding: 6px 10px;
+border-radius: 5px;
+font-size: 10px;
+}
+
+.container .Favorites_Container{
+    margin-top: 60px;
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+}
+.container .Favorites{
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+}
+}
