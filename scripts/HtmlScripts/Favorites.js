@@ -1,5 +1,6 @@
-import { products, ToDecimals, getproduct } from "../Data Scripts/product.js";
-import { Favorites, AddToFavorite,countCarts, countFvorites, DelFavorites } from "../Data Scripts/Cart.js";
+import { products, ToDecimals } from "../Data Scripts/product.js";
+import { proDetails, saveToStrage } from "../Data Scripts/Pro-Details.js";
+import { Favorites, AddToFavorite,countCarts, countFvorites, DelFavorites, AddToCart } from "../Data Scripts/Cart.js";
 
 
 RenderFvorites()
@@ -47,7 +48,7 @@ export function RenderFvorites(){
                     <span>${Favorite__Item.rating.count}</span>
                 </div>
                 <div class="product-btns">
-                    <button>Add to cart</button>
+                    <button class="CartBtn" data-product-id="${Favorite__Item.Id}">Add to cart</button>
                     <button class="DetailBtn" data-product-id="${Favorite__Item.Id}"><a href="Details.html">See Details</a></button>
                 </div>
             </div>
@@ -80,6 +81,44 @@ export function RenderFvorites(){
             countFvorites()
             window.location.reload();
             console.log("Deleted sucessfully")
+        })
+    })
+
+    function viewDetails(productId){
+
+        if(proDetails.length === 0){
+            proDetails.push({
+                productId : productId,
+                quantity : 1
+            })  
+        }
+        else{
+            proDetails.length = 0
+            proDetails.push({
+                productId : productId,
+                quantity : 1
+            })  
+        }
+    
+        saveToStrage ()
+    }
+
+    document.querySelectorAll('.DetailBtn').forEach((Buton)=>{
+        Buton.addEventListener('click', ()=>{
+            const productId = Buton.dataset.productId
+            viewDetails(productId)
+        })
+    })
+    
+    document.querySelectorAll('.CartBtn').forEach((BuTTon)=>{
+        BuTTon.addEventListener('click', ()=>{
+            const productId = BuTTon.dataset.productId
+            AddToCart(productId)
+            let AddesMessage = document.querySelector(`.SMS-${productId}`)
+            AddesMessage.classList.add('visible')
+            setTimeout(()=>{
+                AddesMessage.classList.remove('visible')
+            },2000)
         })
     })
 
